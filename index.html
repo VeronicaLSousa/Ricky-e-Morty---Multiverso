@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore o multiverso de Rick and Morty e conheça seus personagens.">
+    <title>Rick & Morty | Multiverso</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="logo">RICK <span>&</span> MORTY</a>
+            <a href="#personagens" class="nav-link">Personagens</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <span class="tag">EXPLORE O MULTIVERSO</span>
+                <h1>UMA AVENTURA<br>PELO <span>MULTIVERSO</span></h1>
+                <p>
+                    Conheça os personagens mais incríveis de Rick and Morty.
+                    Explore diferentes dimensões e descubra quem habita esse universo!
+                </p>
+                <a href="#personagens" class="hero-button">Explorar personagens ↓</a>
+            </div>
+            <div class="portal">🌀</div>
+        </section>
+
+        <section class="characters-section" id="personagens">
+            <div class="section-heading">
+                <span class="tag">BANCO DE DADOS INTERDIMENSIONAL</span>
+                <h2>PERSONAGENS</h2>
+                <p>Descubra os habitantes de diferentes dimensões.</p>
+            </div>
+
+            <form id="search-form" class="search-area">
+                <input
+                    type="search"
+                    id="search-input"
+                    placeholder="Buscar personagem pelo nome..."
+                    aria-label="Buscar personagem pelo nome"
+                >
+                <button type="submit">BUSCAR</button>
+            </form>
+
+            <div id="results-info" class="results-info" aria-live="polite"></div>
+
+            <div id="characters-container" class="characters-grid">
+                <p class="loading">Carregando personagens do multiverso...</p>
+            </div>
+
+            <div class="pagination">
+                <button id="prev-button" disabled>← ANTERIOR</button>
+                <span id="page-info">Página 1</span>
+                <button id="next-button">PRÓXIMA →</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>RICK & MORTY MULTIVERSE</p>
+        <p>Projeto acadêmico desenvolvido com HTML, CSS, JavaScript e Rick and Morty API.</p>
+        <a href="https://rickandmortyapi.com/" target="_blank" rel="noopener noreferrer">
+            Dados fornecidos pela Rick and Morty API
+        </a>
+    </footer>
+
+</body>
+</html>
